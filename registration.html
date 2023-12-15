@@ -1,79 +1,146 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-<title>MSWD</title>
-<style>
-
-    body
-    {
-      background-image: url("images/bgimage.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .navbar
-    {
-      background-color: lightgray;
-      padding: 10px;
-
-    }
-
-    form {
-      width: 300px;
-      margin: 0 auto;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-  
-    input[type="email"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      box-sizing: border-box;
-    }
-  
-    input[type="submit"] {
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  
-    input[type="submit"]:hover {
-      background-color: #45a049;
-}
-
-</style>
+  <title>MSWD</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body >
+<body>
 
-<h2 align="center" style="color: white;">Student Information System</h2>
+  <h2 align="center">Student Information System</h2>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="https://newerp.kluniversity.in/">ERP</a></li>
+    </ul>
+  </nav>
+     
+  <br><br>
+  <center>
+    <form method="post" action="">
+      <table>
+        <tr>
+          <td>
+            <td>
+              <label>Enter Student ID</label>
+              <input type="number" name="sid" required/>
+            </td>
+          </td>
+        </tr>
 
-<div class="navbar" >
-<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
-<a href="registration.html">Registration</a>&nbsp;&nbsp;&nbsp;
-<a href="login.html">Login</a>&nbsp;&nbsp;&nbsp;
-<a href="contact.html">Contact Us</a>&nbsp;&nbsp;&nbsp;
-<a href="https://newerp.kluniversity.in/" target="_blank">ERP</a>&nbsp;&nbsp;&nbsp;
-</div>
+        <tr>
+          <td>
+            <td>
+              <label>Enter Student NAME</label>
+              <input type="text" name="sname" required/>
+            </td>
+          </td>
+        </tr>
 
-<br><br>
+        <tr>
+          <td>
+            <td>
+              <label>Select Gender</label>
+              <input type="radio" name="gender" value="MALE" required/>Male
+              <input type="radio" name="gender" value="FEMALE" required/>Female
+              <input type="radio" name="gender" value="OTHERS" required/>Others
+            </td>
+          </td>
+        </tr>
 
-<form method="post" action="studenthome.html">
+        <tr>
+          <td>
+            <td>
+              <label>Select Department</label>
+              <select name="dept" required>
+                <option value="">--Select--</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="AI&DS">AI&DS</option>
+              </select>
+            </td>
+          </td>
+        </tr>
 
-Enter Email Address</Address><input type="email" name="emailid" required/><br/>   
-Enter Password<input type="password" name="pwd" required/><br/>  
-<input type="submit" value="Login"/>
+        <tr>
+          <td>
+            <td>
+              <label>Enter Year</label>
+              <input type="number" name="year" required/>
+            </td>
+          </td>
+        </tr>
 
+        <tr>
+          <td>
+            <td>
+              <label>Enter CGPA</label>
+              <input type="number" step="0.01" name="cgpa" required/>
+            </td>
+          </td>
+        </tr>
 
-</form>
+        <tr>
+          <td>
+            <td>
+              <label>Enter Backlogs</label>
+              <input type="number" name="backlogs" required/>
+            </td>
+          </td>
+        </tr>
 
+        <tr>
+          <td>
+            <td>
+              <label>Enter Email Address</label>
+              <input type="email" name="email" required/>
+            </td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <td>
+              <label>Enter Password</label>
+              <input type="password" name="password" required/>
+            </td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <td>
+              <label>Enter Contact No</label>
+              <input type="tel" name="contact" required/>
+            </td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <td>
+              <label>Enter Location</label>
+              <input type="text" name="location" required/>
+            </td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <td>
+              <input type="submit" value="Register" class="button"/>
+              <input type="reset" value="Clear" class="button"/>
+            </td>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </center>
 </body>
 
 </html>
